@@ -1,4 +1,4 @@
-# KubeLearn - Kubernetes Training Platform
+# KubeLab - Kubernetes Training Platform
 
 A professional, demo-ready UI prototype for a university Kubernetes training platform. Built with React + Tailwind CSS with a modern dark theme.
 
