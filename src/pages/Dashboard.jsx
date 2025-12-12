@@ -18,7 +18,9 @@ import {
   Activity,
   Cpu,
   HardDrive,
-  Box
+  Box,
+  Mail,
+  MessageCircle
 } from 'lucide-react';
 
 function StatCard({ icon: Icon, label, value, subValue, color = 'blue' }) {
@@ -305,6 +307,40 @@ export default function Dashboard() {
           </div>
         )}
       </div>
+
+      {/* Contact CTA */}
+      <Card className="bg-gradient-to-r from-k8s-blue/10 to-purple-600/10 border-k8s-blue/30">
+        <CardContent>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h2 className="text-xl font-bold text-white mb-2">
+                Interested in KubeLab for your organization?
+              </h2>
+              <p className="text-gray-400">
+                Get in touch with our team to learn how KubeLab can help train your engineers on Kubernetes.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="mailto:Team@DeltaOps.net"
+                className="flex items-center gap-2 px-5 py-3 bg-k8s-blue hover:bg-k8s-blue-dark text-white font-medium rounded-lg transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+                Team@DeltaOps.net
+              </a>
+              <a
+                href="https://wa.me/995558577022"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
