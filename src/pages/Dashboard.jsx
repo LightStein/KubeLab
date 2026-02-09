@@ -329,7 +329,7 @@ export default function Dashboard() {
                 Team@DeltaOps.net
               </a>
               <a
-                href="https://wa.me/995558577022"
+                href="https://wa.me/995595792765"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
